@@ -31,7 +31,6 @@ public class FileParser {
      */
     public int[][] parse() throws IOException {
         String line;
-        Vector<Integer> black, red;
         int[][] mat;
 
         /* First Settings */

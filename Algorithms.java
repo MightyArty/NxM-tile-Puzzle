@@ -11,7 +11,7 @@ public class Algorithms {
 	public static String alg; // Algorithm name
 	public static Boolean with_time = false; // Time flag
 	public static Boolean with_open_list = false; // Open list flag
-	public static final int TOP = 20000; // Top limit for the number of nodes in cases where there is no solution.
+	public static final int TOP = 50000; // Top limit for the number of nodes in cases where there is no solution.
 
 	public static String run(Node s) {
 		switch (alg) {
@@ -25,6 +25,7 @@ public class Algorithms {
 				return IDA(s);
 
 			default:
+				System.out.println("Invalid algorithm");
 				return null;
 		}
 	}
